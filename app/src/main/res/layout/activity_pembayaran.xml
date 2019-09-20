@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    tools:context=".Pembayaran">
+
+    <ImageView
+        android:id="@+id/img_chat"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/chat"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/notification"
+        android:layout_margin="10dp"
+        android:layout_toLeftOf="@+id/img_chat"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cirImg_logo"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logobulet"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="40dp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="#045F38"
+        />
+
+    <TextView
+        android:id="@+id/TV_emailpembayaran"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/cirImg_logo"
+        android:layout_toLeftOf="@id/ET_emailPembayaran"
+        android:text="Email"
+        android:layout_marginRight="90dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#045F38"
+        />
+
+    <EditText
+        android:id="@+id/ET_emailPembayaran"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/cirImg_logo"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20sp"
+        android:hint="Email"
+        android:paddingLeft="20dp"
+        android:textColorHint="@color/abu"
+        android:textColor="@color/putih"
+        android:background="@drawable/background_btn"
+    />
+
+
+    <EditText
+        android:id="@+id/ET_transfer"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ET_emailPembayaran"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20sp"
+        android:hint="Atas Nama"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/abu"
+        android:textColor="@color/putih"
+        android:background="@drawable/background_btn"
+    />
+
+    <TextView
+        android:id="@+id/TV_atasNama"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/TV_emailpembayaran"
+        android:layout_toLeftOf="@id/ET_transfer"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="Atas Penerima"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#045F38"
+        />
+
+    <EditText
+        android:id="@+id/ET_transferJumlah"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/TV_atasNama"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20sp"
+        android:hint="Transfer Sejumlah"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/abu"
+        android:textColor="@color/putih"
+        android:background="@drawable/background_btn"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transfer Sejumlah"
+        android:layout_below="@id/TV_atasNama"
+        android:textSize="16sp"
+        android:textColor="#045F38"
+        android:layout_toLeftOf="@id/ET_transfer"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        />
+
+
+</RelativeLayout>

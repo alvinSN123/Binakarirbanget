@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    tools:context=".Register">
+
+
+
+    <ImageView
+        android:id="@+id/img_chat"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/chat"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/notification"
+        android:layout_margin="10dp"
+        android:layout_toLeftOf="@+id/img_chat"
+        />
+
+    <ImageView
+        android:id="@+id/cirImg_logo"
+        android:layout_width="250dp"
+        android:layout_height="120dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logobulet"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="40dp"
+        />
+
+    <EditText
+        android:id="@+id/ET_nama"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/cirImg_logo"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:hint="Nama Lengkap"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:textColorHint="#045F38"
+        android:background="@drawable/background_btn"
+        />
+
+    <EditText
+        android:id="@+id/ET_email"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ET_nama"
+        android:layout_centerVertical="true"
+        android:hint="Email"
+        android:paddingLeft="10dp"
+        android:textColorHint="#045F38"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/background_pdf"
+        android:shadowColor="@color/colorPrimary"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bgbaru" />
+
+    <EditText
+        android:id="@+id/ET_hp"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ET_email"
+        android:layout_centerVertical="true"
+        android:hint="No Handphone"
+        android:paddingLeft="10dp"
+        android:textColorHint="#045F38"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_btn"
+        android:shadowColor="@color/colorPrimary"
+        />
+
+
+
+    <Spinner
+        android:id="@+id/SP_ig"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ET_hp"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/ET_peserta"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/SP_ig"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_btn"
+        android:hint="Jumlah Peserta "
+        android:paddingLeft="10dp"
+        android:layout_centerInParent="true"
+        android:textColorHint="#045F38" />
+
+    <Button
+        android:id="@+id/Btn_next"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="Next"
+        android:textColor="@color/putih"
+        android:textAllCaps="false"
+        android:background="@drawable/background_register"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ET_peserta"/>
+
+
+
+
+
+</RelativeLayout>

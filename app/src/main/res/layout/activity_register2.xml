@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+        tools:context=".Register2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/background_banner" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_chat"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/chat" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:layout_toLeftOf="@+id/img_chat"
+            android:src="@drawable/notification" />
+
+        <ImageView
+            android:id="@+id/cirImg_logo"
+            android:layout_width="250dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="40dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logopng" />
+
+        <EditText
+            android:id="@+id/ET_jurusan"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/cirImg_logo"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/background_btn"
+            android:hint="Jurusan Kuliah (S1)"
+            android:paddingLeft="20dp"
+            android:textColorHint="#045F38" />
+
+        <Spinner
+            android:id="@+id/SP_universitas"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/ET_jurusan"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/ET_jurusankuliah"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/SP_universitas"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_btn"
+            android:hint="Jurusan Kuliah (S2)"
+            android:paddingLeft="10dp"
+            android:shadowColor="@color/colorPrimary"
+            android:textColorHint="#045F38" />
+
+        <Spinner
+            android:id="@+id/SP_universitas2"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/ET_jurusankuliah"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/ET_pekerjaan"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/SP_universitas2"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_btn"
+            android:hint="Pekerjaan "
+            android:paddingLeft="10dp"
+            android:shadowColor="@color/colorPrimary"
+            android:textColorHint="#045F38" />
+
+        <EditText
+            android:id="@+id/ET_perusahaan"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/ET_pekerjaan"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_btn"
+            android:hint="Perusahaan / Organisasi "
+            android:paddingLeft="10dp"
+            android:shadowColor="@color/colorPrimary"
+            android:textColorHint="#045F38" />
+
+        <Button
+            android:id="@+id/Btn_submit"
+            android:layout_width="260dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/ET_perusahaan"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_register"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/putih" />
+
+
+</RelativeLayout>

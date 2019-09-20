@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Binakarir</string>
+    <string name="profile_name">Recky Perkasa</string>
+    <string name="profile_email">reckyperkasa@gmail.com</string>
+    <string name="Wait">Waiting\nFor Payment</string>
+    <string name="prores">On Progres</string>
+    <string name="done">Done</string>
+    <string name="ubah">Ubah Photo</string>
+    <string name="username">Ubah Photo</string>
+    <string name="aturpassword">Ubah Photo</string>
+    <string name="tanggal">Ubah Photo</string>
+    <string name="email_myprofile">Ubah Photo</string>
+    <string name="telepon">Telepon</string>
+    <string name="atasnama">Atas Nama</string>
+    <string name="transfer">Jumlah Transfer</string>
+    <string name="file">Attact File</string>
+    <string name="yourpoint">Your Point</string>
+    <string name="kumpulkanpoint">Kumpulkan Point Anda Hingga Mencapai 1000\nPoint, Maka Anda Berhak Mendapatkan\nPotongan Sebesar 10% Untuk Pembayaran\nWorkshop</string>
+
+</resources>

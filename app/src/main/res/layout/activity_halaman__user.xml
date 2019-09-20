@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Halaman_User">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ImageView
+        android:id="@+id/img_chat"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/chat"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/notification"
+        android:layout_margin="10dp"
+        android:layout_toLeftOf="@+id/img_chat"
+        />
+
+
+
+
+        <ImageView
+        android:id="@+id/cirImg_logo_user"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logobulet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        />
+
+   <RelativeLayout
+       android:id="@+id/Relative_layout_profile"
+       android:layout_width="match_parent"
+       android:layout_height="130dp"
+       android:layout_below="@+id/cirImg_logo_user"
+       android:background="@drawable/bg_profile2"
+       android:layout_marginLeft="20dp"
+       android:layout_marginTop="10dp"
+       android:layout_marginRight="20dp"
+
+       >
+
+        <ImageView
+            android:id="@+id/cirImg_photo_profile"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_account_circle_white"
+            />
+
+        <TextView
+            android:id="@+id/txt_name_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_name"
+            android:textColor="@color/putih"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/cirImg_photo_profile"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_email"
+            android:textColor="@color/putih"
+            android:textStyle="bold"
+            android:layout_below="@+id/txt_name_profile"
+            android:layout_marginLeft="130dp"
+
+
+            />
+
+   </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Relative_layout_payment"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/Relative_layout_profile"
+        android:background="@drawable/bg_profile3"
+        android:layout_margin="20dp"
+        >
+        <TextView
+            android:id="@+id/Name_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Status"
+            android:textColor="@color/putih"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            />
+        
+        <ImageView
+            android:id="@+id/Logo_time"
+            android:layout_width="50dp"
+            android:layout_height="50dp" 
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/ic_access_time_black"
+            />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_below="@+id/Logo_time"
+            android:layout_marginLeft="35dp"
+            android:text="@string/Wait"
+            android:gravity="center"
+            android:textSize="10dp"
+            android:textColor="@color/putih"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/Img_logo_progres"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/Name_payment"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_account_circle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prores"
+            android:layout_below="@+id/Img_logo_progres"
+            android:textColor="@color/putih"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            />
+
+       <ImageView
+           android:id="@+id/Img_logo_done"
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:layout_centerVertical="true"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="40dp"
+           android:src="@drawable/ic_check_box_"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/putih"
+            android:textStyle="bold"
+            android:text="@string/done"
+            android:layout_below="@id/Img_logo_done"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="49dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_below="@+id/Relative_layout_payment"
+        android:background="@drawable/bg_profile"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/txt_myprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Profile"
+            android:textColor="@color/hitam"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_chevron_right"
+            />
+
+
+        <View
+            android:id="@+id/View_myprofile"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/txt_myprofile"
+            android:background="@color/hitam"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/txt_name_refund"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refund"
+            android:textColor="@color/hitam"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/View_myprofile"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_chevron_right"
+            android:layout_below="@+id/View_myprofile"
+            />
+
+
+        <View
+            android:id="@+id/View_refund"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/txt_name_refund"
+            android:background="@color/hitam"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/txt_name_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Point"
+            android:textColor="@color/hitam"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/View_refund"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_chevron_right"
+            android:layout_below="@+id/View_refund"
+            />
+
+
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

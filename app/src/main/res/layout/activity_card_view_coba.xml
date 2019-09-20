@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".CardViewCoba">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/View_signup"
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:background="@drawable/bgatas" />
+
+
+    <EditText
+        android:id="@+id/ET_nama_lengkap"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/View_signup"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/background_btn"
+        android:hint="Nama Lengkap"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:textColorHint="#045F38" />
+
+    <EditText
+        android:id="@+id/ET_username"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ET_nama_lengkap"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/background_btn"
+        android:hint="Username"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#045F38" />
+
+
+        <TextView
+            android:id="@+id/TV_lakilaki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laki-Laki"
+            android:layout_below="@+id/ET_username"
+            android:paddingLeft="70dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/hitam"
+            android:layout_marginTop="10dp"
+
+            />
+
+        <RadioButton
+            android:id="@+id/RB_lakilaki"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/TV_lakilaki"
+            android:layout_below="@id/ET_username"
+
+            />
+
+        <TextView
+            android:id="@+id/TV_perempuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perempuan"
+            android:textColor="@color/hitam"
+            android:layout_toRightOf="@+id/RB_lakilaki"
+            android:layout_below="@id/ET_username"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="70dp"
+            android:paddingRight="10dp"
+            />
+
+        <RadioButton
+            android:id="@+id/RB_perempuan"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/TV_perempuan"
+            android:layout_below="@id/ET_username"
+            />
+
+        <EditText
+            android:id="@+id/ET_tanggal_lahir"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/RB_lakilaki"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/background_btn"
+            android:hint="Tanggal Lahir"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColorHint="#045F38" />
+
+        <EditText
+            android:id="@+id/ET_nomer_hp"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/ET_tanggal_lahir"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/background_btn"
+            android:hint="Nomer HP"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColorHint="#045F38" />
+
+        <EditText
+            android:id="@+id/ET_email_signup"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/ET_tanggal_lahir"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/background_btn"
+            android:hint="Email"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColorHint="#045F38" />
+
+        <Button
+            android:id="@+id/Btn_submit"
+            android:layout_width="260dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/ET_email_signup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_register"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/putih" />
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ScrollView>
